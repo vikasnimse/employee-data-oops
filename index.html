@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Employee Data Store</title>
+    <link crossorigin="anonymous" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+          rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/yeti/bootstrap.min.css"
+          integrity="sha384-mLBxp+1RMvmQmXOjBzRjqqr0dP9VHU2tb3FK6VB0fJN/AOu7/y+CAeYeWJZ4b3ii" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+    <h1 class="display-4 text-center">
+        <i class="fa fa-list text-warning"></i><span class="text-primary"> Employee</span> List</h1>
+    <form id="emp-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input class="form-control" id="name" type="text">
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input class="form-control" id="address" type="text">
+        </div>
+        <div class="form-group">
+            <label for="mobileno">Mobile No</label>
+            <input class="form-control" id="mobileno" type="text">
+        </div>
+        <div class="form-group">
+            <label for="department">Department</label>
+            <input class="form-control" id="department" type="text">
+        </div>
+        <input class="btn btn-primary btn-block" type="submit" value="Add Employee">
+    </form>
+    <table class="table table-striped mt-5">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile#</th>
+            <th>Department</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="emp-list"></tbody>
+    </table>
+</div>
+<script src="employee.js" type="text/javascript"></script>
+<script src="store.js" type="text/javascript"></script>
+<script src="ui.js" type="text/javascript"></script>
+<script src="index.js" type="text/javascript"></script>
+</body>
+</html>
