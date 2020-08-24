@@ -8,6 +8,7 @@ class UI {
     static addEmployeeToList(employee) {
         const list = document.querySelector('#emp-list');
         const row = document.createElement('tr');
+        row.className = '';
         row.innerHTML = `
       <td>${employee.name}</td>
       <td>${employee.address}</td>
